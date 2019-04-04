@@ -15,7 +15,7 @@ const render = {
   _uuid: 0,
   _ipc: ipcRenderer,
   on(channel, cb) {
-    ipcMain.on(`render:${channel}`, async (e, targetChannel, ...args) => {
+    ipcRenderer.on(`render:${channel}`, async (e, targetChannel, ...args) => {
       const result = await cb(e, ...args)
       e.sender.send(targetChannel, result)
     })
