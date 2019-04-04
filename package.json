@@ -1,0 +1,13 @@
+{
+  "name": "electron-test",
+  "version": "1.0.0",
+  "main": "main.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "electron": "^4.1.3"
+  },
+  "author": "cwxyz007 <jie844067636@gmail.com>"
+}
